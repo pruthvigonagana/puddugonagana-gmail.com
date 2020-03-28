@@ -1,0 +1,161 @@
+python ka baaaap guida van ruseman 
+built on 1991-1995
+Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+Python is an object oriented programming language like Java. Python is called an interpreted language. Python uses code modules that are interchangeable instead of a single long list of instructions that was standard for functional programming languages. The standard implementation of python is called “cpython”. It is the default and widely used implementation of the Python.
+Python doesn’t convert its code into machine code, something that hardware can understand. It actually converts it into something called byte code. So within python, compilation happens, but it’s just not into a machine language. It is into byte code and this byte code can’t be understood by CPU. So we need actually an interpreter called the python virtual machine. The python virtual machine executes the byte codes.
+
+Step 1 : The interpreter reads a python code or instruction. Then it verifies that the instruction is well formatted, i.e. it checks the syntax of each line.If it encounters any error, it immediately halts the translation and shows an error message.
+Step 2 : If there is no error, i.e. if the python instruction or code is well formatted then the interpreter translates it into its equivalent form in intermediate language called “Byte code”.Thus, after successful execution of Python script or code, it is completely translated into Byte code.
+Step 3 : Byte code is sent to the Python Virtual Machine(PVM).Here again the byte code is executed on PVM.If an error occurs during this execution then the execution is halted with an error message.
+
+It is used for:
+
+web development (server-side),
+software development,
+mathematics,
+system scripting.
+
+What can Python do?
+
+Python can be used on a server to create web applications.
+Python can be used alongside software to create workflows.
+Python can connect to database systems. It can also read and modify files.
+Python can be used to handle big data and perform complex mathematics.
+Python can be used for rapid prototyping, or for production-ready software development.
+advanages:
+Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+Python has a simple syntax similar to the English language.
+Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+Python can be treated in a procedural way, an object-orientated way or a functional way.
+
+Python Indentation
+Indentation refers to the spaces at the beginning of a code line.
+
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+
+Python uses indentation to indicate a block of code.
+
+Python has no command for declaring a variable.
+eg:x = 5
+y = "Hello, World!"
+Variable Names
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:
+A variable name must start with a letter or the underscore character
+A variable name cannot start with a number
+A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Variable names are case-sensitive (age, Age and AGE are three different variables)
+Remember that variable names are case-sensitive
+You can also use the + character to add a variable to another variable:
+
+For numbers, the + character works as a mathematical operator:
+
+Variables that are created outside of a function (as in all of the examples above) are known as global variables.
+
+Global variables can be used by everyone, both inside of functions and outside.
+
+To create a global variable inside a function, you can use the global keyword.
+
+Built-in Data Types
+In programming, data type is an important concept.
+
+Variables can store data of different types, and different types can do different things.
+
+Python has the following data types built-in by default, in these categories:
+
+Text Type:	str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+
+You can get the data type of any object by using the type() function
+
+Example	Data Type
+x = "Hello World"	str	
+x = 20	int	
+x = 20.5	float	
+x = 1j	complex	
+x = ["apple", "banana", "cherry"]	list	
+x = ("apple", "banana", "cherry")	tuple	
+x = range(6)	range	
+x = {"name" : "John", "age" : 36}	dict	
+x = {"apple", "banana", "cherry"}	set	
+x = frozenset({"apple", "banana", "cherry"})	frozenset	
+x = True	bool	
+x = b"Hello"	bytes	
+x = bytearray(5)	bytearray	
+x = memoryview(bytes(5))	memoryview
+
+
+
+
+
+CODES:
+
+1 wap to print a table of a number...
+a=eval(input("enter the number"))
+b=eval(input("enter the number"))
+for i in range(1,b+1):
+    print(a*i)
+
+2 wap to count a digit..
+a=eval(input("enter the number"))
+count=0
+while(a>0):
+    a=a//10
+    count=count+1
+print(count)
+
+3. wap to reverse of a number..
+a=eval(input("enter the number"))
+rev=0
+b=a
+while(a>0):
+    d=a%10
+    rev=rev*10+d
+    a=a//10
+
+if rev==b:
+  print("yes")
+else:
+  print("no)
+
+4.wap to print number is armstrong or not 
+a=eval(input("enter the number"))
+count=0
+sum=0
+b=a
+f=a
+while(a>0):
+    a=a//10
+    count+=1
+while(b>0):
+    d=b%10
+    sum=sum+d**count
+    b=b//10
+if f==sum:
+    print("yes")
+else:
+    print("no")
+
+    
+5.wap to print to cheak a number prime or not...
+a=eval(input("enter the number"))
+count=0
+for i in range(1,a+1):
+    if(a%i==0):
+        count=count+1
+if (count>2):
+    print("composite")
+else :
+    print("prime")
+    
+6.wap 
+    
+
+       
+
